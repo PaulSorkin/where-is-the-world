@@ -46,14 +46,16 @@ export const Header = () => {
         <HeaderEl>
             <Container>
                 <Wraper>
-                    <Title>What an interesting tsak!</Title>
+                    <Title>Where is the world?</Title>
                     <ModeSwitcher onClick={toggleTheme}>
                         {theme === 'light' ? (
                             <IoMoonOutline size="14px" />
                         ) : (
                             <IoMoon size="14px" />
                         )}
-                        <span style={{marginLeft: '0.75rem'}}>{theme} theme</span>
+                        <span style={{marginLeft: '0.75rem'}}>
+                            {theme === 'light' ? 'Dark' : 'Light'
+                            } theme</span>
                     </ModeSwitcher>
                 </Wraper>
             </Container>
